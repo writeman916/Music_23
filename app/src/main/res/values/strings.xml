@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">music_23</string>
+    <string name="title_content">Music for live</string>
+    <string name="welcome">Welcome to Music app</string>
 </resources>
