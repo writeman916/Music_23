@@ -1,7 +1,9 @@
-package com.framgia.music_23;
+package com.framgia.music_23.screen.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.framgia.music_23.R;
 
 public class MainActivity extends AppCompatActivity {
 
