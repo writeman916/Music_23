@@ -2,4 +2,10 @@
     <string name="app_name">music_23</string>
     <string name="title_content">Music for live</string>
     <string name="welcome">Welcome to Music app</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_singer">Singer</string>
+    <string name="nav_genres">Genres</string>
+    <string name="hello_home_fragment">Hello home fragment</string>
+    <string name="hello_singer_fragment">Hello singer fragment</string>
+    <string name="hello_genres_fragment">Hello genres fragment</string>
 </resources>
