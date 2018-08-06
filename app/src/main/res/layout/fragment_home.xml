@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
     <TextView
-        android:id="@+id/img_button_love_song"
+        android:id="@+id/text_love_song"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_46"
         android:layout_gravity="center_vertical"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/image_song_poster"
         />
     <TextView
-        android:id="@+id/img_button_time"
+        android:id="@+id/text_time"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_46"
         android:layout_gravity="center_vertical"
@@ -50,10 +50,10 @@
         android:textSize="@dimen/sp_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_button_love_song"
+        app:layout_constraintTop_toBottomOf="@+id/text_love_song"
         />
     <TextView
-        android:id="@+id/txt_song_offline"
+        android:id="@+id/text_song_offline"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_46"
         android:layout_marginLeft="@dimen/dp_11"
@@ -63,10 +63,10 @@
         android:textSize="@dimen/sp_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_button_time"
+        app:layout_constraintTop_toBottomOf="@+id/text_time"
         />
     <TextView
-        android:id="@+id/img_button_playlist"
+        android:id="@+id/text_playlist"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_46"
         android:layout_gravity="center_vertical"
@@ -81,10 +81,10 @@
         android:textSize="@dimen/sp_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_song_offline"
+        app:layout_constraintTop_toBottomOf="@+id/text_song_offline"
         />
     <TextView
-        android:id="@+id/img_button_song"
+        android:id="@+id/text_song"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_46"
         android:layout_gravity="center_vertical"
@@ -94,15 +94,15 @@
         android:gravity="center_vertical"
         android:paddingEnd="@dimen/dp_30"
         android:paddingRight="@dimen/dp_30"
-        android:text="@string/playlist"
+        android:text="@string/song"
         android:textColor="@color/color_white"
         android:textSize="@dimen/sp_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_button_playlist"
+        app:layout_constraintTop_toBottomOf="@+id/text_playlist"
         />
     <TextView
-        android:id="@+id/img_button_author"
+        android:id="@+id/text_artist"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_46"
         android:layout_gravity="center_vertical"
@@ -112,15 +112,15 @@
         android:gravity="center_vertical"
         android:paddingEnd="@dimen/dp_30"
         android:paddingRight="@dimen/dp_30"
-        android:text="@string/playlist"
+        android:text="@string/artist"
         android:textColor="@color/color_white"
         android:textSize="@dimen/sp_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_button_song"
+        app:layout_constraintTop_toBottomOf="@+id/text_song"
         />
     <TextView
-        android:id="@+id/img_button_download"
+        android:id="@+id/text_download"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_46"
         android:layout_gravity="center_vertical"
@@ -130,12 +130,12 @@
         android:gravity="center_vertical"
         android:paddingEnd="@dimen/dp_30"
         android:paddingRight="@dimen/dp_30"
-        android:text="@string/playlist"
+        android:text="@string/download"
         android:textColor="@color/color_white"
         android:textSize="@dimen/sp_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_button_author"
+        app:layout_constraintTop_toBottomOf="@+id/text_artist"
         />
 
 </android.support.constraint.ConstraintLayout>
