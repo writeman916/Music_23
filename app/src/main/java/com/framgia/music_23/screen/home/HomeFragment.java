@@ -16,7 +16,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         return new HomeFragment();
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
@@ -32,7 +31,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.text_love_song:
                 startActivity(new Intent(getContext(), MySongActivity.class));
                 break;
