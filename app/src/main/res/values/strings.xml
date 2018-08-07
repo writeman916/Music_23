@@ -12,4 +12,7 @@
     <string name="listen_recently">Listen Recently</string>
     <string name="song_offline">OFFLINE SONGS</string>
     <string name="playlist">Playlist</string>
+    <string name="song">Songs</string>
+    <string name="artist">Artist</string>
+    <string name="download">Download</string>
 </resources>
