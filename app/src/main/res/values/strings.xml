@@ -15,4 +15,6 @@
     <string name="song">Songs</string>
     <string name="artist">Artist</string>
     <string name="download">Download</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_num">0.00</string>
 </resources>

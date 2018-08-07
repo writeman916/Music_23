@@ -2,7 +2,8 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/main_nav"
@@ -14,7 +15,7 @@
         app:itemBackground="@color/color_dark_gray"
         app:itemIconTint="@color/nav_item_colors"
         app:itemTextColor="@color/nav_item_colors"
-        app:layout_constraintBottom_toBottomOf="@+id/main_view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,13 +25,13 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/main_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_above="@id/main_nav"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/background"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/main_nav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
