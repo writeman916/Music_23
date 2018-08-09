@@ -7,7 +7,7 @@ public class Constants {
     public static final int READ_TIMEOUT = 10000;
     public static final int CONNECT_TIMEOUT = 15000;
     public static final String REQUEST_METHOD = "GET";
-    public static final String API_KEY = BuildConfig.API_KEY+"&limit=10";
+    public static final String API_KEY = BuildConfig.API_KEY + "&limit=10";
     public static final String BASE_URL = "http://api.soundcloud.com/tracks";
     public static final String CLIENT_ID = "?client_id=" + API_KEY;
     public static final String COLLECTION = "collection";
