@@ -17,4 +17,6 @@
     <string name="download">Download</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="default_num">0.00</string>
+    <!--data test namesong-->
+    <string name="namesong">Đừng Quên Tên Anh</string>
 </resources>
