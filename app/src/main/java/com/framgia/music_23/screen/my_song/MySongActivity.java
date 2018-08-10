@@ -20,6 +20,7 @@ public class MySongActivity extends AppCompatActivity
     private RecyclerView mRecyclerViewSongs;
     private MySongPresenter mMySongPresenter;
     private MySongAdapter mMySongAdapter;
+    private List<Song> mSongs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,8 @@ public class MySongActivity extends AppCompatActivity
 
     @Override
     public void onGetSongSuccess(List<Song> songs) {
+        assert songs != null;
+        mSongs = songs;
         mMySongAdapter.addData(songs);
     }
 
@@ -56,7 +59,7 @@ public class MySongActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.setCustomAnimations(R.anim.slide_up, R.anim.slide_down);
-        fragmentTransaction.replace(R.id.activity_mysong, PlayMusicFragment.newInstance());
+        fragmentTransaction.replace(R.id.activity_mysong, PlayMusicFragment.newInstance(mSongs,position));
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
