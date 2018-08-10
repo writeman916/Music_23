@@ -59,7 +59,8 @@ public class MySongActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.setCustomAnimations(R.anim.slide_up, R.anim.slide_down);
-        fragmentTransaction.replace(R.id.activity_mysong, PlayMusicFragment.newInstance(mSongs,position));
+        fragmentTransaction.replace(R.id.activity_mysong,
+                PlayMusicFragment.newInstance(mSongs, position));
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

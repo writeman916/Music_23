@@ -10,15 +10,12 @@ import android.os.IBinder;
 import android.os.Parcelable;
 import android.os.PowerManager;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.widget.Toast;
 import com.framgia.music_23.data.model.Song;
 import com.framgia.music_23.utils.Constants;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import static android.media.MediaPlayer.MEDIA_ERROR_UNKNOWN;
 
 public class MusicService extends Service
         implements MediaPlayer.OnPreparedListener, MediaPlayer.OnCompletionListener,
@@ -105,12 +102,6 @@ public class MusicService extends Service
         return false;
     }
 
-    public class MusicBinder extends Binder {
-        public MusicService getService() {
-            return MusicService.this;
-        }
-    }
-
     public String getArtistName() {
         return mSongs.get(mSongPosition) != null ? mSongs.get(mSongPosition)
                 .getArtist()
@@ -151,6 +142,18 @@ public class MusicService extends Service
         }
     }
 
+    public int getSongDuration() {
+        return mMediaPlayer.getDuration();
+    }
+
+    public int getCurrentPosition() {
+        return mMediaPlayer.getCurrentPosition();
+    }
+
+    public void seekTo(int position) {
+        mMediaPlayer.seekTo(position);
+    }
+
     private void resumeMedia() {
         if (!mMediaPlayer.isPlaying()) {
             mMediaPlayer.seekTo(mSongPosition);
@@ -160,5 +163,31 @@ public class MusicService extends Service
 
     public boolean isPlaying() {
         return mMediaPlayer.isPlaying();
+    }
+
+    public void nextMusic() {
+        if (mSongPosition == mSongs.size() - 1) {
+            mSongPosition = 0;
+        } else {
+            mSongPosition++;
+        }
+        mMediaPlayer.reset();
+        initMediaPlayer();
+    }
+
+    public void previousMusic() {
+        if (mSongPosition == 0) {
+            mSongPosition = mSongs.size() - 1;
+        } else {
+            mSongPosition--;
+        }
+        mMediaPlayer.reset();
+        initMediaPlayer();
+    }
+
+    public class MusicBinder extends Binder {
+        public MusicService getService() {
+            return MusicService.this;
+        }
     }
 }
